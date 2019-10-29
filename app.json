@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/big/big",
+    "pages/heigh/heigh",
+    "pages/mother/mother"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "福财岭",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "综合",
+        "iconPath": "images/coupon.png",
+        "selectedIconPath": "images/coupon.png"
+      },
+      {
+        "pagePath": "pages/big/big",
+        "text": "大额",
+        "iconPath": "images/coupon.png",
+        "selectedIconPath": "images/coupon.png"
+      },
+      {
+        "pagePath": "pages/heigh/heigh",
+        "text": "精选",
+        "iconPath": "images/coupon.png",
+        "selectedIconPath": "images/coupon.png"
+      },
+      {
+        "pagePath": "pages/mother/mother",
+        "text": "母婴",
+        "iconPath": "images/coupon.png",
+        "selectedIconPath": "images/coupon.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

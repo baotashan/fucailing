@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="container">
+  
+  <view id="coupon-list" wx:for="{{couponList}}" wx:key="item.numIid">
+      <view class="coupon-item">
+        <view class="border-left"></view>
+        <image src="{{item.pictUrl}}"></image>
+        <view class="goods-content">
+          <view class="goods-content-view">
+            <view class="goods-name">{{item.shortTitle}}</view>
+            <view class="goods-price-sales">
+              <view class="goods-price">￥{{item.zkFinalPrice}}</view>
+              <view class="goods-price-coupon">￥{{item.quanhoujia}}</view>
+              <view class="goods-sales">月销量: {{item.volume}}</view>
+            </view>
+            <!-- <view class="coupon-denomination">淘口令:{{item.itemDescription}}</view> -->
+          </view>
+        </view>
+        <view class="coupon-content">
+          <view class="coupon-background">券</view>
+          <view class="coupon-content-view">
+            <view class="coupon-fuzhi" bindtap='copyText' data-text="{{item.itemDescription}}">点击复制</view>
+          </view>
+        </view>
+        <view class="border-right"></view>
+      </view>
+  </view>
+  <view class="template-load" hidden="{{isLoading ? true : false}}">
+    <view>上拉加载更多</view>
+  </view>
+  <view class="template-load" hidden="{{isLoading ? false : true}}">
+    <view hidden="{{loadOver ? true : false}}">
+      <view class="loading"></view>正在加载
+    </view>
+    <view hidden="{{loadOver ? false : true}}">没有更多数据</view>
+  </view>
+</view>
